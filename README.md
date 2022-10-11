@@ -4,7 +4,7 @@ Group name: [for(ken && sese){ System.out.println("Team")}]
 
 Group members: [Sesethu Ndiniso and Kensani Chauke]
 
-Group mentor: [Jonah Bischof]
+Group mentor: [Zelalem Shibeshi]
 
 Project title: [TipTapTo]
 
