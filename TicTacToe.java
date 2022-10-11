@@ -64,7 +64,8 @@ public class TicTacToe{
                 
                 
                  
-            } 
+            }
+            break;
         } 
   
       
@@ -359,7 +360,8 @@ public class TicTacToe{
             else if (j == 15) { 
                 return "draw"; 
                 
-            } 
+            }
+            break;
         } 
   
       
