@@ -76,7 +76,7 @@ public class TicTacToe{
       
     
     
-    static void printBoard() 
+    static void printGameBoard() 
     { 
         System.out.println("|---|---|---|"); 
         System.out.println("| " + grid[0] + " | "
@@ -110,7 +110,7 @@ public class TicTacToe{
         } 
   
         System.out.println("Welcome to the first level " + p1 +" and " + p2 +"!!!"); 
-        printBoard(); 
+        printGameBoard(); 
   
         System.out.println( 
             "Player 1 please enter your num : "); 
@@ -144,7 +144,7 @@ public class TicTacToe{
                     turn = "X"; 
                 } 
   
-                printBoard(); 
+                printGameBoard(); 
                 winner = checkWinner(); 
             } 
             else { 
@@ -178,7 +178,7 @@ public class TicTacToe{
         } 
   
         System.out.println("Welcome to the second level"); 
-        printBoard2(); 
+        printGameBoard2(); 
   
         System.out.println( 
             "X will play first. Enter a slot number to place X in:"); 
@@ -212,7 +212,7 @@ public class TicTacToe{
                     turn2 = "X"; 
                 } 
   
-                printBoard2(); 
+                printGameBoard2(); 
                 winner2 = check2ndWinner(); 
             } 
             else { 
@@ -244,7 +244,7 @@ public class TicTacToe{
         } 
   
         System.out.println("Welcome to the third level"); 
-        printBoard3(); 
+        printGameBoard3(); 
   
         System.out.println( 
             "Player 1 please enter your slot:"); 
@@ -278,7 +278,7 @@ public class TicTacToe{
                     turn3 = "X"; 
                 } 
   
-                printBoard3(); 
+                printGameBoard3(); 
                 winner3 = check3rdWinner(); 
             } 
             else { 
@@ -371,7 +371,7 @@ public class TicTacToe{
       
     
     
-    static void printBoard2() 
+    static void printGameBoard2() 
     { 
         System.out.println("|----|----|----|----|"); 
         System.out.println("|  " + grid[0] + " |  "
@@ -466,7 +466,7 @@ public class TicTacToe{
       
     
     
-    static void printBoard3() 
+    static void printGameBoard3() 
     { 
         System.out.println("|----|----|----|----|---|"); 
         System.out.println("|  " + grid[0] + " |  "
