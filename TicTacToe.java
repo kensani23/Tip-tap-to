@@ -10,7 +10,7 @@ public class TicTacToe{
     
     
     
-    public static String checkWinner() 
+    public static String findWinner() 
     { 
         for (int i = 0; i < 8; i++) { 
             String win = null; 
@@ -145,7 +145,7 @@ public class TicTacToe{
                 } 
   
                 printGameBoard(); 
-                winner = checkWinner(); 
+                winner = findWinner(); 
             } 
             else { 
                 System.out.println( 
@@ -213,7 +213,7 @@ public class TicTacToe{
                 } 
   
                 printGameBoard2(); 
-                winner2 = check2ndWinner(); 
+                winner2 = find2ndWinner(); 
             } 
             else { 
                 System.out.println( 
@@ -279,7 +279,7 @@ public class TicTacToe{
                 } 
   
                 printGameBoard3(); 
-                winner3 = check3rdWinner(); 
+                winner3 = find3rdWinner(); 
             } 
             else { 
                 System.out.println( 
@@ -302,7 +302,7 @@ public class TicTacToe{
 
 
 
-    }  public static String check2ndWinner() 
+    }  public static String find2ndWinner() 
     { 
         for (int j = 0; j < 15; j++) { 
             String win2= "X"; 
@@ -391,7 +391,7 @@ public class TicTacToe{
                            + " | " + grid[15] + " |"); 
         System.out.println("|----|----|----|----|");    
     }
-    public static String check3rdWinner() 
+    public static String find3rdWinner() 
     { 
         for (int j = 0; j < 15; j++) { 
             String win3= "X"; 
