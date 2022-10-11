@@ -56,7 +56,7 @@ public class TicTacToe{
                 return "O"; 
             } 
         } 
-          
+          //method for checking the winner.
         for (int i = 0; i < 9; i++) { 
             if (Arrays.asList(grid).contains( 
                     String.valueOf(i + 1))) {
@@ -70,7 +70,7 @@ public class TicTacToe{
                  
             }
             break;
-        } 
+        } //if there is a draw, the code breaks and does not go to the next level
   
       
         System.out.println( 
@@ -97,7 +97,7 @@ public class TicTacToe{
                            + " |"); 
         System.out.println("|---|---|---|"); 
     } 
-  
+  //printing the grid with three rows and three columns for level1
     public static void main(String[] args) 
     { 
         Scanner in = new Scanner(System.in); 
@@ -105,7 +105,7 @@ public class TicTacToe{
         System.out.println("Player 1 enter your name: ");
         String p1 = in.nextLine();
         System.out.println("Player 2 enter your name: ");
-        String p2 = in.nextLine();
+        String p2 = in.nextLine();// allowing players to insert their names
         grid = new String[9]; 
         turn = "X"; 
         String winner = null; 
@@ -115,7 +115,7 @@ public class TicTacToe{
         } 
   
         System.out.println("Welcome to the first level " + p1 +" and " + p2 +"!!!"); 
-        printGameBoard(); 
+        printGameBoard(); //calling  the printGameBoard method
   
         System.out.println( 
             "Player 1 please enter your num : "); 
@@ -135,7 +135,7 @@ public class TicTacToe{
                 System.out.println( 
                     "Invalid num; please re-enter a number:"); 
                 continue; 
-            } 
+            } //catches the error when you have entered an invalid number
               
             
             if (grid[num - 1].equals( 
@@ -147,9 +147,9 @@ public class TicTacToe{
                 } 
                 else { 
                     turn = "X"; 
-                } 
+                } //if X played already the turn changes to 0
   
-                printGameBoard(); 
+                printGameBoard(); //calling the method
                 winner = findWinner(); 
             } 
             else { 
@@ -355,7 +355,7 @@ public class TicTacToe{
                 return "O"; 
             } 
         } 
-          
+          //checking winner for the second level
         for (int j = 0; j < 16; j++) { 
             if (Arrays.asList(grid).contains( 
                     String.valueOf(j + 1))) { 
@@ -367,6 +367,7 @@ public class TicTacToe{
             }
             break;
         } 
+        //breaking the code because there is no winner
   
       
         System.out.println( 
